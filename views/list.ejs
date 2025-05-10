@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Todo list</h1>
+    </div>
+    <div class="box">
+        <% for(var i=0; i < ejes.length; i++) { %>
+            <div class="item">
+                <label class="task-label">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-text">
+                        <%= ejes[i] %>
+                    </span>
+                </label>
+            </div>
+            <% } %>
+
+                <form action="/" method="post">
+                    <input type="text" name="ele1" placeholder="Enter the task">
+                    <button type="submit">+</button>
+                </form>
+    </div>
+</body>
+
+</html>
